@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DairyAPI", "DairyAPI\DairyAPI.csproj", "{7D3555BB-79B0-4BAB-AFD3-15522872A596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DairyDataAccess", "DairyDataAccess\DairyDataAccess.csproj", "{9700396A-7848-42B6-AB7C-74CE25769297}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D3555BB-79B0-4BAB-AFD3-15522872A596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D3555BB-79B0-4BAB-AFD3-15522872A596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D3555BB-79B0-4BAB-AFD3-15522872A596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D3555BB-79B0-4BAB-AFD3-15522872A596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9700396A-7848-42B6-AB7C-74CE25769297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9700396A-7848-42B6-AB7C-74CE25769297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9700396A-7848-42B6-AB7C-74CE25769297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9700396A-7848-42B6-AB7C-74CE25769297}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B00C4B4-2B94-41E5-98B5-DB3C5EE59191}
+	EndGlobalSection
+EndGlobal
