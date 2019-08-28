@@ -48,35 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201908181756524_swarnadb-v1.cs" />
-    <Compile Include="Migrations\201908181756524_swarnadb-v1.Designer.cs">
-      <DependentUpon>201908181756524_swarnadb-v1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908181758417_swarnadb-v2.cs" />
-    <Compile Include="Migrations\201908181758417_swarnadb-v2.Designer.cs">
-      <DependentUpon>201908181758417_swarnadb-v2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908181803438_swarnadb-v3.cs" />
-    <Compile Include="Migrations\201908181803438_swarnadb-v3.Designer.cs">
-      <DependentUpon>201908181803438_swarnadb-v3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908181804256_swarnadb-v4.cs" />
-    <Compile Include="Migrations\201908181804256_swarnadb-v4.Designer.cs">
-      <DependentUpon>201908181804256_swarnadb-v4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908181805101_swarnadb-v5.cs" />
-    <Compile Include="Migrations\201908181805101_swarnadb-v5.Designer.cs">
-      <DependentUpon>201908181805101_swarnadb-v5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908250804515_swarnadb-v6.cs" />
-    <Compile Include="Migrations\201908250804515_swarnadb-v6.Designer.cs">
-      <DependentUpon>201908250804515_swarnadb-v6.cs</DependentUpon>
+    <Compile Include="Migrations\201908280457377_swarnadb-v1.cs" />
+    <Compile Include="Migrations\201908280457377_swarnadb-v1.Designer.cs">
+      <DependentUpon>201908280457377_swarnadb-v1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Dealer.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Models\SwarnaContext.cs" />
@@ -89,23 +71,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201908181756524_swarnadb-v1.resx">
-      <DependentUpon>201908181756524_swarnadb-v1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908181758417_swarnadb-v2.resx">
-      <DependentUpon>201908181758417_swarnadb-v2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908181803438_swarnadb-v3.resx">
-      <DependentUpon>201908181803438_swarnadb-v3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908181804256_swarnadb-v4.resx">
-      <DependentUpon>201908181804256_swarnadb-v4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908181805101_swarnadb-v5.resx">
-      <DependentUpon>201908181805101_swarnadb-v5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908250804515_swarnadb-v6.resx">
-      <DependentUpon>201908250804515_swarnadb-v6.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201908280457377_swarnadb-v1.resx">
+      <DependentUpon>201908280457377_swarnadb-v1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

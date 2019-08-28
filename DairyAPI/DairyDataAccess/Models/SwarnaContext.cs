@@ -21,5 +21,9 @@ namespace DairyDataAccess
         public DbSet<Address> Address { get; set; }
         public DbSet<Dealer> Dealers { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        
+
     }
 }

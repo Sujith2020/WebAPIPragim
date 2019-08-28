@@ -14,8 +14,8 @@ namespace DairyAPI.Controllers
     public class ProductsController : ApiController
     {
         ProductRepository prodrep = new ProductRepository();
-        string sdf = "";
-        [RequireHttps]
+
+        
         public IEnumerable<Product> GetProducts()
         {
             List <Product> products =  prodrep.GetProducts();

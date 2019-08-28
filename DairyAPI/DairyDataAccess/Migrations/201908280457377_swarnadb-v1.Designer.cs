@@ -7,13 +7,13 @@ namespace DairyDataAccess.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class swarnadbv3 : IMigrationMetadata
+    public sealed partial class swarnadbv1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(swarnadbv3));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(swarnadbv1));
         
         string IMigrationMetadata.Id
         {
-            get { return "201908181803438_swarnadb-v3"; }
+            get { return "201908280457377_swarnadb-v1"; }
         }
         
         string IMigrationMetadata.Source
