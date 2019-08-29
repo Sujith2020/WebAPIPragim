@@ -7,16 +7,31 @@
         $(document).ready(function () {
             var ulEmployees = $('#ulProducts');
             $('#btn').click(function () {
+                var Username = $('#txtusername').val();    
+                var Password = $('#txtpassword').val();    
                 $.ajax({
                     type: 'GET',
-                    url: "api/Products",
+                    url: "api/Employees",
                     dataType: 'json',
+                    headers: {
+                        'Authorization': 'Basic ' + btoa(Username + ":" + Password)
+                    },
                     success: function (data) {
                         ulEmployees.empty();
+                        //$.each(data, function (index, val) {
+                        //    var nameandprice = val.name + ". Price - " + val.name + ". Quantity - " + val.quantity ;
+                        //    ulEmployees.append('<li>' + nameandprice +'</li>');
+                        //});
                         $.each(data, function (index, val) {
-                            var nameandprice = val.name + ". Price - " + val.price + ". Quantity - " + val.quantity ;
-                            ulEmployees.append('<li>' + nameandprice +'</li>');
+                            var fullName = val.name + ' Employee Id :  ' + val.empId;
+                            ulEmployees.append('<li>' + fullName + ' (' + val.gender + ')</li>')
                         });
+                    },
+                    complete: function (jqXHR) {
+                        if (jqXHR.status == '401' ) {
+                            ulEmployees.empty();
+                            ulEmployees.append('<li>' + jqXHR.status + ':' + jqXHR.statusText + '</li>');
+                        }
                     }
                 });
             });
@@ -29,6 +44,8 @@
 </head>
 <body>
     <div>
+        Username : <input id="txtusername" type="text"/>
+        Password : <input id="txtpassword" type="text"/><br/><br />
         <input id="btn" type="button" value="Get All Products" />
         <input id="btnClear" type="button" value="Clear" />
         <ul id="ulProducts" />

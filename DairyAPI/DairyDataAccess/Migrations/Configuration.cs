@@ -24,9 +24,9 @@ namespace DairyDataAccess.Migrations
 
             IList<User> Users = new List<User>();
 
-            Users.Add(new User() { Username = "User 1", Password = "First Password", EmpId = 1001});
-            Users.Add(new User() { Username = "User 2", Password = "Second Password", EmpId = 1002 });
-            Users.Add(new User() { Username = "User 3", Password = "Third Password", EmpId = 1003 });
+            Users.Add(new User() { Username = "User1", Password = "Password1", EmpId = 1001});
+            Users.Add(new User() { Username = "User2", Password = "Password2", EmpId = 1002 });
+            Users.Add(new User() { Username = "User3", Password = "Password3", EmpId = 1003 });
             //context.Users.AddRange(Users);
            
 

@@ -25,7 +25,7 @@ namespace DairyAPI
                 defaults: new { controller = "Products", id = RouteParameter.Optional }
             );
             config.Formatters.Remove(config.Formatters.XmlFormatter);
-            //this is to return json for all except tools like fiddler should respect accept header
+            //this is to return json for all except tools like fiddler should respect accept header 
             //config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
             //config.Formatters.Add(new CustomJsonFormatter());
 
